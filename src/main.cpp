@@ -67,6 +67,7 @@ void loop() {
 
   // OLED display
   display.println("Accelerometer - m/s^2");
+  display.setCursor(0, 10);
   display.print(a.acceleration.x, 1);
   display.print(", ");
   display.print(a.acceleration.y, 1);
@@ -74,13 +75,18 @@ void loop() {
   display.print(a.acceleration.z, 1);
   display.println("");
 
+
+  display.setCursor(0, 26);
   display.println("Gyroscope - rps");
+  display.setCursor(0, 38);
   display.print(g.gyro.x, 1);
   display.print(", ");
   display.print(g.gyro.y, 1);
   display.print(", ");
   display.print(g.gyro.z, 1);
   display.println("");
+
+  display.setCursor(0, 55);
   display.println("Temperature ");
   display.print(temp.temperature);
   display.print(" degC");
