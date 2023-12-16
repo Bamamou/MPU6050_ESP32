@@ -4,7 +4,7 @@ The simutation of this sourcode is avaliable at :https://wokwi.com/projects/3839
 The OLED is based on I2C with the below connection: <br>
 ### OLED_ESP
 This is how the OLED is connected to the ESP32<br>
-Make sure to check the address if you want to use I2C
+Make sure to check the addressof the OLED if you want to use I2C in this case is (0x3C) or you can use SPI
 <pre>OLED         ESP32  </pre>
 <pre>SDA          21     </pre>
 <pre>SCL          22    </pre>
